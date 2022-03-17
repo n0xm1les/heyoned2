@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEYONED | Kerem Yemenici</title>
-    <link rel="stylesheet" href="style.css">
 
     <!-- Syles -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -27,7 +24,31 @@
 </head>
 <body>
     
-    <nav></nav>
+    <nav>
+        <div id="nav-center">
+            <h1 id="brand">HEYONED</h1>
+            <ul id="nav-menu">
+                <li><a href="#anasayfa">Anasayfa</a></li>
+                <li class="dropdown">
+                    <a href="#dil-bilgisi-anchor" class="drop-btn">Dil Bilgisi <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#sozluk-anchor">Sözlük</a>
+                        <a href="#imla-anchor">İmla Kuralları</a>
+                        <a href="#noktalama-anchor">Noktalama İşaretleri</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#edebiyat-anchor" class="drop-btn">Edebiyat <i class="bi bi-caret-down-fill"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#temel-eserler-anchor">100 Temel Eser</a>
+                        <a href="#okudugum-kitaplar-anchor">Okuduğum Kitaplar</a>
+                        <a href="#siirler-anchor">Şiirler</a>
+                        <a href="#alıntılar-anchor">Edebiyattan Alıntılar</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header></header>
     <main>
         <section id="dil-bilgisi"></section>
