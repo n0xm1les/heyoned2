@@ -18,6 +18,7 @@ body {
     height: 1200px;
 }
 
+/* Nav Styles */
 nav {
     width: 100%;
     height: 60px;
@@ -65,7 +66,43 @@ ul#nav-menu>li>a {
     font-family: 'Rowdies', cursive;
     text-decoration: none;
 }
+/* /Nav Styles */
 
+/* Header Styles */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('background-header.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-wrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.welcome-text {
+    color: #ffffff;
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    font-weight: bold;
+    border: 1px solid #999999;
+}
+
+.welcome-text:first-child {
+    margin-bottom: 5px;
+}
+
+/* /Header Styles */
 
 /* Classes */
 .dropdown {
