@@ -15,7 +15,7 @@ html {
 
 body {
     background-color: #eeeeee;
-    height: 1200px;
+    margin-bottom: 3000px;
 }
 
 /* Nav Styles */
@@ -26,6 +26,7 @@ nav {
     position: fixed;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 
@@ -66,7 +67,7 @@ ul#nav-menu>li>a {
     font-family: 'Rowdies', cursive;
     text-decoration: none;
 }
-/* /Nav Styles */
+/* --Nav Styles-- */
 
 /* Header Styles */
 
@@ -91,10 +92,11 @@ header {
 
 .welcome-text {
     color: #ffffff;
-    font-size: xx-large;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: xx-large;
     font-weight: bold;
+    padding: 5px;
     border: 1px solid #999999;
 }
 
@@ -102,9 +104,19 @@ header {
     margin-bottom: 5px;
 }
 
-/* /Header Styles */
+/* --Header Styles-- */
 
-/* Classes */
+/* Dil Bilgisi Section */
+
+    /* Sozluk Section */
+
+
+
+    /* --Sozluk Section-- */
+
+/* --Dil Bilgisi Section-- */
+
+/* General Classes */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -151,3 +163,112 @@ header {
 .clear {
     clear: both;
 }
+
+.section-divider {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin: 5px 0;
+}
+
+.section-divider::after {
+    content: " ";
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    border:2px solid #000000;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+
+.section-divider-text {
+    width: max-content;
+    color: #000000;
+    background-color: #eeeeee;
+    margin: auto;
+    padding: 0 10px;
+    font-size: xx-large;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+
+.full-centered {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Style */
+
+.card-wrp {
+    width: 100%;
+    height: fit-content;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 300px;
+    height: 330px;
+    border-radius: 30px;
+    background: #fffcf5;
+    box-shadow:  20px 20px 60px #d9d6d0,
+                -20px -20px 60px #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.card-header, .card-body, .card-footer {
+    width: 100%;
+}
+
+.card-header {
+    height: fit-content;
+    min-height: 50px;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 30px 30px 0 0;
+    text-align: center;
+}
+
+.card-title {
+    margin: 7px;
+    font-family: 'Playfair Display', serif;
+}
+
+.card-body {
+    height: 100%;
+}
+
+.card-content {
+    height: 100%;
+    white-space: pre-wrap;
+    text-align: justify;
+    margin: 5px 15px 0 15px;
+}
+
+.card-footer {
+    height: 100px;
+    color: #d35400;
+    background: rgb(255,252,245);
+    background: linear-gradient(0deg, rgba(255,252,245,1) 50%, rgba(255,252,245,0.19931722689075626) 100%);
+    font-size: x-large;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 30px 30px;
+}
+
+/* --Card Style-- */
