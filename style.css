@@ -23,6 +23,7 @@ nav {
     width: 100%;
     height: 60px;
     background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -110,6 +111,18 @@ header {
 
     /* Sozluk Section */
 
+section#sozluk {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+section#sozluk>a {
+    font-size: x-large;
+    align-self: center;
+    margin: 25px 0;
+}
 
 
     /* --Sozluk Section-- */
@@ -168,7 +181,7 @@ header {
     width: 100%;
     height: fit-content;
     position: relative;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .section-divider::after {
@@ -191,7 +204,13 @@ header {
     padding: 0 10px;
     font-size: xx-large;
     font-family: 'Playfair Display', serif;
-    position: relative;
+}
+
+.section-divider>.section-divider-button {
+    background-color: #eeeeee;
+    position: absolute;
+    padding: 0 10px;
+    top: 13px; right: 55px;
 }
 
 .full-centered {
@@ -206,6 +225,8 @@ header {
 .card-wrp {
     width: 100%;
     height: fit-content;
+    background-color: #fffcf5;
+    padding: 50px 0;
     margin: 25px 0;
     display: flex;
     flex-direction: row;
@@ -218,10 +239,11 @@ header {
 .card {
     width: 300px;
     height: 330px;
+    /* border: 1px solid #999999; */
     border-radius: 30px;
     background: #fffcf5;
-    box-shadow:  20px 20px 60px #d9d6d0,
-                -20px -20px 60px #ffffff;
+    box-shadow:  10px 10px 20px #c9c6c0,
+                -10px -10px 20px #f0f0f0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -272,3 +294,27 @@ header {
 }
 
 /* --Card Style-- */
+
+/* Button Styles */
+
+.btn {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #d35400;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.btn-tertiary {
+    color: #d35400;
+    font-size: large;
+}
+
+/* --Button Styles-- */
