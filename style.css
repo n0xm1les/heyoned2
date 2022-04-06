@@ -15,7 +15,6 @@ html {
 
 body {
     background-color: #eeeeee;
-    margin-bottom: 3000px;
 }
 
 /* Nav Styles */
@@ -27,7 +26,7 @@ nav {
     position: fixed;
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 5;
 }
 
 
@@ -106,6 +105,21 @@ header {
 }
 
 /* --Header Styles-- */
+
+/* Footer Styles */
+
+footer {
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    background-color: #000011;
+    text-align: center;
+    font-size: larger;
+    margin-top: 100px;
+    padding-top: 13px;
+}
+
+/* --Footer Styles-- */
 
 /* Dil Bilgisi Section */
 
@@ -252,6 +266,7 @@ section#sozluk>a {
     align-items: flex-start;
     justify-content: flex-start;
     overflow: hidden;
+    padding: 0 0 13px 0;
 }
 
 .card-header, .card-body, .card-footer {
@@ -260,26 +275,33 @@ section#sozluk>a {
 
 .card-header {
     height: fit-content;
-    min-height: 50px;
     border-bottom: 1px solid #f0f0f0;
     border-radius: 30px 30px 0 0;
     text-align: center;
 }
 
+.card-header, .card-header>* {
+    cursor: pointer;
+}
+
 .card-title {
     margin: 7px;
     font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
 }
 
 .card-body {
     height: 100%;
+    cursor: pointer;
 }
 
-.card-content {
+p.card-content {
     height: 100%;
     white-space: pre-wrap;
     text-align: justify;
     margin: 5px 15px 0 15px;
+    cursor: pointer;
+
 }
 
 .card-footer {
@@ -297,11 +319,39 @@ section#sozluk>a {
 
 /* --Card Style-- */
 
+/* See All Card Style */
+
+.see-all-card-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #00000099;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.see-all-card-wrapper>.card {
+    width: 75%;
+    height: 85%;
+    margin-top: 60px;
+    padding: 5px 25px;
+    border-radius: 30px 0 0 30px;
+    overflow-y: scroll;
+}
+
+.see-all-card-wrapper>.card>.card-footer {
+    display: none;
+}
+
+/* --See All Card Style-- */
+
 /* Book Card Style */
 
 .book-wrp {
     width: 100%;
-    height: 477px;
+    height: 900px;
     background-color: #fffcf5;
     padding: 50px 0;
     margin: 25px 0;
@@ -323,6 +373,7 @@ section#sozluk>a {
     flex-wrap: wrap;
     border: 1px solid #aaaaaa;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 img.book-pic {
@@ -375,6 +426,101 @@ h3.book-writer {
 
 /* --Book Card Style-- */
 
+/* Quote Card Style */
+
+.quote-wrp {
+    width: 750px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.quote-selector {
+    width: 100%;
+    height: 50px;
+    background-color: #fffcf5;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-selector>.page {
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid #aaaaaa;
+}
+
+.quote-selector>.page:last-child {
+    border-right: none;
+}
+
+.quote-selector>.selected {
+    background-color: #fffcf5;
+    position: relative;
+    filter: drop-shadow(0px 3px 6px #aaaaaa);
+    transition: filter 2s;
+}
+
+.quote-selector>.selected::after {
+    content: " ";
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    left: 44%;
+    bottom: -20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #ffffff;
+}
+
+.quote-card {
+    width: 100%;
+    min-height: 500px;
+    background-color: #fffcf5;
+    padding: 25px;
+}
+
+.quote {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+p.quote-text {
+    white-space: pre-wrap;
+    font-size: large;
+    font-weight: bold;
+}
+
+em.quote-writer {
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+}
+
+.quote:nth-of-type(odd) {
+    text-align: left;
+    border-left: 10px solid #d35400;
+    border-radius: 0 0 0 25px;
+}
+
+.quote:nth-of-type(even) {
+    text-align: right;
+    border-right: 10px solid #d35400;
+    border-radius: 0 0 25px 0;
+}
+
+/* --Quote Card Style-- */
+
 /* Button Styles */
 
 .btn {
@@ -395,6 +541,18 @@ h3.book-writer {
 .btn-tertiary {
     color: #d35400;
     font-size: large;
+}
+
+.anchor {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: -60px;
+}
+
+section {
+    position: relative;
 }
 
 /* --Button Styles-- */
