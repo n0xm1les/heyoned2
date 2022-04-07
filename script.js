@@ -8,6 +8,10 @@ temel_wrapper.innerHTML = " "
 const okuduklarim_wrapper = document.getElementById("okuduklarim-wrapper")
 okuduklarim_wrapper.innerHTML = " "
 
+const siirler_wrp = document.getElementById("siirler-wrp") 
+
+const alintilar_wrp = document.getElementById("alintilar-wrp")
+
 const see_all_card_wrp = document.getElementById("see-all-card-wrapper")
 
 see_all_card_wrp.style.display = "none"
@@ -113,11 +117,54 @@ function create_book_card(wrapper, title, img, writer, details) {
     wrapper.append(book_card)
 }
 
+function generate_quote(wrapper, quote_list, whc_page=1) {
+    let quote_selector, page, quote_card, quote_parent, quote, quote_text, quote_writer
+    quote_selector = wrapper.querySelector(".quote-selector")
+    quote_selector.innerHTML = ""
+    for (let index = 0; index < quote_list.length; index++) {
+        page = document.createElement("div")
+        page.className = "page"
+        if (index == whc_page-1) {
+            page.classList.add("selected")
+        }
+        page.textContent = index + 1
+        page.addEventListener("click", e => {
+            let selected_page = quote_selector.querySelector(".page.selected")
+            selected_page.classList.remove("selected")
+            e.target.classList.add("selected")
+            console.log(e.target)
+            generate_quote(wrapper, quote_list, e.target.textContent)
+        })
+
+        quote_selector.append(page)
+    }
+
+    quote_card = wrapper.querySelector(".quote-card")
+    quote_card.innerHTML = ""
+    quote_parent = quote_list[whc_page-1]
+    for (let index = 0; index < quote_parent.length; index++) {
+        quote = document.createElement("div")
+        quote.className = "quote"
+        quote_text = document.createElement("p")
+        quote_text.className = "quote-text"
+        quote_text.textContent = quote_parent[index]["quote"]
+        quote_writer = document.createElement("em")
+        quote_writer.className = "quote-writer"
+        quote_writer.textContent = quote_parent[index]["author"]
+        quote.append(quote_text)
+        quote.append(quote_writer)
+        quote_card.append(quote)
+    }
+    
+}
+
 function main() {
     generate_card(imla_kurallari, imla_wrp)
     generate_card(noktalama_isaretleri, noktalama_wrp)
     generate_book_card(yuz_temel_eser, temel_wrapper)
     generate_book_card(okuduklarim, okuduklarim_wrapper)
+    generate_quote(siirler_wrp, siirler)
+    generate_quote(alintilar_wrp, alintilar)
 }
 
 main()

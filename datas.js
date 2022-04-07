@@ -80,3 +80,84 @@ const okuduklarim = [
 	{"title": "Uzun Hikaye", "img": "https://img.kitapyurdu.com/v1/getImage/fn:60346/wh:true/wi:220", "details": "Ben o zamanlar on altı yaşındaydım, lise birde. İnce uzun bir oğlan. Saçlarım kirpi gibi dik duruyor; ne yana, ne geriye taranmıyor, beni deli ediyordu. Babam “inatsın inat... İnatçı adamın saçı yatmaz. Dedeme çekmişsin besbelli. Keşke annene benzeseydin“ diyordu. Keşke...Annemin lepiska gibi yumuşacık, sarı saçları vardı. En çok o mavi gözlerini özlüyorum. “Benim oğlum okuyacak yüksek bir memur olacak“der, sonra da göz ucuyla babama bakardı.... Devamı kitapta.", "writer": " Mustafa Kutlu"},
 	{"title": "Beyaz Diş", "img": "https://img.kitapyurdu.com/v1/getImage/fn:10882468/wh:true/wi:220", "details": "Kendi cinsinden ve insanlardan nefret gördüğü, hiç durmadan onlarla mücadele ettiği için büyümesi çabuk fakat tek yönlü oluyordu. İçindeki şefkat ve sevginin filizlenmesi olanaksızdı. Böyle şeyler için en küçük bir umudu bile yoktu. Kuvvetliye boyun eğmek, zayıfı ezmek kuralını öğretmişti. Gri kunduz kuvvetli bir tanrıydı. Bu yüzden Beyaz Diş ona boyun eğiyordu. Fakat kendisinden küçük olan köpek, ezilmesi gereken zayıf bir yaratıktı. Onunki kuvvet yönünde bir gelişmeydi. Devamlı acı çekmek, hatta mahvolmak tehlikesine karşı koyabilmek için,m yırtıcı ve savunmacı özellikleri aşırı derecede gelişmişti. Diğer köpeklerden daha çabuk hareket ediyor, daha hızlı koşuyordu. Onlara oranla daha hileci, daha çevikti. Çelik gibi kasları, ipince sinirleri olan, cesur, zalim, yırtıcı ve akıllı bir hayvan olup çıktı. Bütün bu niteliklere sahip olması şarttı, aksi halde ne ayakta durabilecek ne de içinde bulunduğu bu düşman çevrede yaşayabilecekti.", "writer": " Jack London"}
 ]
+
+const siirler = [
+	[
+		{"quote": "Burada yağmur yağıyor\nAralıksız yağıyor günlerdir\nAma sen yine de şemsiyeni\nAlmadan gel ilk otobüsle\n\nBuğulanan camlara usulca\nYüzünü çiziyorum ki yüzün\nBir yağmur damlası olup\nDüşüyor yapraklarına gülün\n\n\n    \nGüller de bozamıyor bu uzun\nKaranlık sessizliğini kentin\nAnılarını yitiriyor sokaklar\nBezirgânlaşıyor bulvar ışıkları\n\nTarih de kekemeleşiyor bazen\nKi o zaman aşktır tek bilici\nAşksa yürümek gibi bir şey\nDuyabilmek kuşların gelişini\n\nAnısı bizsek eğer bu kentin\nUnuttuğu türküler bizsek\nAcıyı rehin bırakıp bir güle\nAnımsatmalıyız bunları bir bir\n\n\n    \nSonra yürümeliyiz seninle\nSokaklara caddelere çıkmalıyız\nBelki bir aşktır bu kentin\nBelleğini geri getirecek olan\n\nBurada yağmur yağıyor ama sen\nŞemsiyeni almadan gel yine de\nÖzletiyor bu çılgın sağanak seni\nSırılsıklam özletiyor biliyor musun?", "author": "- Ahmet Telli"}
+	],
+	[
+		{"quote": "Yıllar var ben hangi kapıyı çalsam\nYalnızlık, yalnızlık, sonu yalnızlık\nNe zaman nerede birini sevsem\nAyrılık, ayrılık, sonu ayrılık\n\nEn güzel yıllarım geçti hasretle\nBir tebessüm bile geldi zahmetle\nKime sarıldıysam binbir ümitle\nPişmanlık, pişmanlık, sonu pişmanlık\n\nHayatım bir gurbet yolcusu gibi\nVarlığım dertlerin borçlusu gibi\nYarınım bir zindan suçlusu gibi\nKaranlık, karanlık, sonu karanlık.", "author": "- Ahmet Selçuk İlkan"}
+	],
+	[
+		{"quote": "Issız bir adaya düşsek birlikte\n'o üç şeyi yanımıza almasak”\nKimse kurtarmaya gelmese bizi 'modern” dünyadan\nSıfırdan başlasak her şeye\nİnsan olmaya soyunsak -mesela- yeni baştan\nKavgasız, tasasız bir hayat kursak\nSu çıkarsak kazıyarak bir kuyudan\nAteşi bulsak yeniden\nNe var ne yok elde avuçta\nBulup buluşturduğumuz\nSuydu, ekmekti, sözdü\nEllerimizdi- birbiriyle tutuşan-\nAşktı-dudaklarımızı soluk soluğa birbirine karıştıran-\nBakışlarımızdı-dalıp dalıp gittiğimiz-\nGülüşümüzdü-dudaklarımızda serpilip gelişen-\nÖylece hiç hesap kitap tutmadan\nPaylaşsak 'yârin yanağından gayrı” her bir şeyi hep birlikte…\n\nYasaklar olmasa\nTadına baktık diye 'yasak” bir meyvenin adadan kovulmasak mesela\n\nBir dağın ardından doğuşunu seyretsek\nYa da denizin koynunda usulca kaybolup gidişini güneşin\nSırtüstü uzanıp bakışsak geceleri yıldızlarla göz göze\nGünahlar, ayıplar mani olmasa\nUtanmasak\nSarılsak çırılçıplak\nİçimizi yakan ateşi sönmese aşkın- durup dururken-\nDeli divane sevmeyi ve de sevişmeyi öğrensek yeni baştan mesela\n\nBaşka adaların rengini, sesini\nYa da sessizlini öylece kabul etsek\nİşgale kalkışmasak\nSavaşmasak mesela\nSavaşmanın utancını ağır bir yük gibi taşımasak içimizde\n'savaş ve barış” romanları hiç yazılmasa\nAçlık, yokluk, yoksulluk ve zulüm\nVe savaş ve ölümlerle inşa edilen 'modern” dünyaya karşı\nEbediyen 'ıssız ve ilkel” kalsak…", "author": "- Savaş Karaduman"}
+	],
+	[
+		{"quote": "Canımdan çok candan öte sevdiğim\nSen gel ki gül açsın yanaklarımda.\nYüreğimi yollarına serdiğim.\nHala adın durur dudaklarımda..\n\nÇiçek miydin desem, gül müydün desem\nYaren miydin desem, el miydin desem\nŞeker miydin desem, bal mıydın desem\nHala tadın durur damaklarımda..\n\nHiç tadı kalmadı, sensiz ellerin\nMecnun'a benzedi bütün hallerim\nBülbül gibi şakırdayan dillerin\nHala sesi durur kulaklarımda.", "author": "- İbrahim Değerli"}
+	],
+	[
+		{"quote": "İçki tüm kötülüklerin anası dokunmazlar,\nSigara tüm kötülüklere ilk adım dokunmazlar,\nLut, ad, semud kavmine özenen edepsizlere dokunmazlar,\nKötü alışkanlıkları olanları, hainleri, tembelleri aşılasınlar.\n\nOrmanları yakan, onlara destek, soysuzları, onursuzları,\nAç, susuz insanlara yardım etmeyen açgözlü zenginleri,\nSavaşlarla, ilaçlarla, aşılarla tüm insanlığı sömürenleri ,\nVatanına, Milletine, İnsanlığa düşman olanları aşılasınlar.\n\nİş beğenmeyip, açız diyen haddini bilmeyenleri,\nKoronasız ölümü, hastalıkları yasaklayanları,\nİslama, Ulus devletlere, insanlığa düşman olanları,\nİblise tapan, gaspçıları, sapıkları, zalimleri aşılasınlar.", "author": "- Abdülhamit"}
+	]
+]
+
+const alintilar = [
+	[
+		{"quote": "“Huzur mu istiyorsun? Az eşya, az insan.”", "author": "- FRANZ KAFKA"},
+		{"quote": "“Başarıyı en kötü biçimde kullanmak, onunla övünmektir.”", "author": "- Guy de Maupassant"},
+		{"quote": "“Gecenin sırrına vakıf olanlar mutlu uyuyanlar değil mutsuz uyanıklardır.”", "author": "- Nazan Bekiroğlu"},
+		{"quote": "“Hiç kimse görmek istemeyen kadar kör değildir.”", "author": "- İbn-i Sina"},
+		{"quote": "“Ya hatalarınızla yüzleşirsiniz ya da hatalarınızla yüzsüzleşirsiniz.”", "author": "- Dostoyevski"},
+		{"quote": "“Hayat sana limon veriyorsa limonata yap.”", "author": "- John Verdon"},
+		{"quote": "“Ve neylersin mevsim sonbahar işte; yaprak nasıl düşerse, gözyaşı da öyle düşer bu mevsimde.”", "author": "- Sinan Yağmur"},
+		{"quote": "“Annesinden dayak yediği halde yine anne diye ağlayan bir çocuktur aşk.”", "author": "- Cemal Süreya"},
+		{"quote": "“Herkesin aynı yalana inanıyor olması, onu gerçek yapmaz.”", "author": "- Ahmet Ümit"},
+		{"quote": "“İnsandan insana şükür ki fark var; birine cennetse birine zindan. İyi ki bilmiyor kalabalıklar.”", "author": "- Sezai Karakoç"}
+	],
+	[
+		{"quote": "“Edebi olmayanın, aklı yoktur.”", "author": "- Hz. Ali"},
+		{"quote": "“Sadece güneşli günlerde yürürsen hedefe ulaşamazsın.”", "author": "- Paulo Coelho"},
+		{"quote": "“Hava soğuyunca gölge veren ağaçları unutursun.”", "author": "- Japon Atasözü"},
+		{"quote": "“Başkalarını memnun etmek için yaşarsan herkes seni sever, kendin hariç.”", "author": "- Paulo Coelho"},
+		{"quote": "“Haydi uzat ellerini, somurttuğum zamanlar yaptığın gibi, yanaklarımı tutup ger de güleyim.”", "author": "- Yusuf Atılgan"},
+		{"quote": "“Arkadaşlık, muhtemelen, aşkın en sık rastlanan formudur.”", "author": "- Stieg Larsson"},
+		{"quote": "“Geçmiş acı veriyorsa, geçmemiş demektir.”", "author": "- Emine Şeçeroviç"},
+		{"quote": "“Derdi dünya olanın, dünya kadar derdi olur.”", "author": "- Yunus Emre"},
+		{"quote": "“İnsan; denizin olmadığı yerde, umut adına martı olmalı.”", "author": "- Nazım Hikmet"},
+		{"quote": "“Geçmiş dert için yakınmak, yeni dert edinmektir.”", "author": "- Shakespeare"}
+	],
+	[
+		{"quote": "“Bir insanın görüşleri değişebilir ama yüreği aynı kalır.”", "author": "- Dostoyevski"},
+		{"quote": "“Suskunluk, sessizlikten daha çok şey anlatır.”", "author": "- Deniz Roni"},
+		{"quote": "“Fazla ciddiye almayın bu hayatı, nasıl olsa içinden canlı çıkamayacaksınız.”", "author": "- Necip Fazıl"},
+		{"quote": "“Nerenizden yaralandıysanız, kimliğiniz orasıdır.”", "author": "- Milan Kundera"},
+		{"quote": "“Nasıl unutmuşum senin bir başkasını sevdiğini...”", "author": "- Cemal Süreya"},
+		{"quote": "“Unutmak! İşte en iyi intikam...”", "author": "- Lord Byron"},
+		{"quote": "“İnsan; aklındakilerle gündüzleri yüreğindekiyle geceleri uğraşıyormuş.”", "author": "- Can Yücel"},
+		{"quote": "“Gören göze karanlık perde olamaz; görmek istemeyen göze şık ne yapsın!”", "author": "- Hz. Ali"},
+		{"quote": "“Akıllı adam nasıl konuşulacağını bilir. Hikmetli adam ise nasıl suskun kalınacağını da bilir.”", "author": "- Alija Izetbegović"},
+		{"quote": "“En karanlık gece bile sona erer ve güneş tekrar doğar.”", "author": "- Victor Hugo"}
+	],
+	[
+		{"quote": "“Kaybedeceğini bile bile neden mücadele ediyorsun dedi, öleceğini bile bile yaşadığınız unutmuştu.”", "author": "- Ö.A."},
+		{"quote": "“Yola çıktıklarını yolda bulduklarına değişirsen; hem yolunu kaybedersin hem dostunu.”", "author": "- Necip Fazıl"},
+		{"quote": "“Hiçbir şeyim yok akıp giden sokaktan başka. Keşke yalnız bunun için sevseydim seni.”", "author": "- Cemal Süreya"},
+		{"quote": "“Bakarken kıyamamak mı , yoksa baktıkça doyamamak mıdır aşk ?”", "author": "- Özdemir Asaf"},
+		{"quote": "“Yaprak ağaçtan düşünce, rüzgârın oyuncağı olurmuş.”", "author": "- Cemil Meriç"},
+		{"quote": "“Giden sizin için çok değerli de olsada , kapıyı örtün ki ; içerde kalanlar üşümesin...”", "author": "- Paulho Coelho"},
+		{"quote": "“Bazı insanlar alçak gönüllüdür, bazıları da alçak olmaya gönüllüdür.”", "author": "- Necip Fazıl Kısakürek"},
+		{"quote": "“Bizi edepsizler değil, edebimiz susturur.”", "author": "- Mevlana"},
+		{"quote": "“Döndüm arkamı sana, sen sırtımdan vurmayı seversin, yüzüm ağır gelmesin...”", "author": "- Attila ilhan"},
+		{"quote": "“Aklımdan çıkmıyor.Aklım çıkıyor , o çıkmıyor.”", "author": "- Oğuz Atay"}
+	],
+	[
+		{"quote": "“Niçin mi fikir değiştiriyorum? Çünkü ben fikirlerimin sahibiyim; kölesi değil!”", "author": "- C. Şahabettin"},
+		{"quote": "“Hiçbir zafere çiçekli yollardan gidilmez .”", "author": "- La Fontaine"},
+		{"quote": "“Bütün renkler aynı hızda kirleniyordu .Birinciliği beyaza verdiler.”", "author": "- Özdemir Asaf"},
+		{"quote": "“Silgi kullanılmadan resim çizme sanatına hayat denmektedir...”", "author": "- John Cristian"},
+		{"quote": "“Olgun insan güzel söz söyleyen değil , söylediğini yapan insanlardır.”", "author": "- Konfiçyus"},
+		{"quote": "“Nice insanlar gördüm üzerinde elbise yok, Nice elbiseler gördüm içlerinde insan yok.”", "author": "- Mevlana"},
+		{"quote": "“Yumuşak olma ezilirsin , sert olma kırılırsın...”", "author": "- Victor Hugo"},
+		{"quote": "“Herşey beklemesini bilen kişiye kendiliğinden gelir.”", "author": "- Tolstoy"},
+		{"quote": "“Hevesleri için kimse kimsenin gururuyla, duygularıyla oynamasın; bu toprağın üstü varsa bir de altı var, unutulmasın..!”", "author": "- Nicanor Parra"},
+		{"quote": "“Benimle onun arasında kaldıysan, onu seç! Çünkü gerçekten sevseydin, beni seçenek yapmazdın.”", "author": "- Ayşe Kulin"}
+	]
+]
